@@ -1,8 +1,13 @@
 from setuptools import setup, find_packages
 
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name="cmdplug",
     version="0.1.0",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     description="Create simple commands in Python with ease!",
     author="HeapX",
     license="MIT",
